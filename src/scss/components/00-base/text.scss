@@ -1,0 +1,128 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+
+    @media only screen and (min-width: 600px) {
+        font-size: 18px;
+    }
+
+    .text-small {
+        font-size: 0.85em;
+    }
+
+    .text-large {
+        font-size: 1.2rem;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 1.4rem;
+        }
+    }
+
+    h1 {
+        font-size: 40px;
+        font-weight: 800;
+        line-height: 0.8em;
+        letter-spacing: -0.05em;
+        margin-block-end: 0.5em;
+
+        @media only screen and (min-width: 400px) {
+            font-size: 54px;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: 74px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 82px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            font-size: 100px;
+        }
+    }
+
+    h2 {
+        font-size: 44px;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 64px;
+        }
+    }
+
+    h3 {
+        font-size: 31px;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 37px;
+        }
+    }
+
+    h4 {
+        font-size: 25px;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 31px;
+        }
+    }
+
+    h5 {
+        font-size: 22px;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 25px;
+        }
+    }
+
+    h6 {
+        font-size: 18px;
+
+        @media only screen and (min-width: 600px) {
+            font-size: 22px;
+        }
+    }
+
+    h2, h3, h4, h5, h6 {
+        color: $secondary;
+        margin-bottom: 0.75em;
+    }
+
+    p {
+        line-height: 1.25em;
+        margin-block-start: 0;
+    }
+
+    .custom-list {
+        list-style-type: none;
+        padding-inline-start: 1rem;
+
+        li {
+            margin-bottom: 1rem;
+        }
+
+        li:before {
+            content: '-';
+            font-weight: bold;
+            position: absolute;
+            margin-left: -15px;
+        }
+
+        &--light {
+            li:before {
+                color: $primary;
+            }
+        }
+
+        &--dark {
+            li:before {
+                color: #619599;
+            }
+        }     
+    } 
+}
+
+.logo-text {
+    width: auto;
+    margin-left: 0.04rem;
+    margin-top: -1.3rem;
+}
