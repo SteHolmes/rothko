@@ -1,2 +1,2 @@
 import 'lodash';
-import './scss/main.scss';
+import './components/main.scss';

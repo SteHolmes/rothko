@@ -33,12 +33,6 @@
     "watch": "webpack --watch",
     "build": "webpack"
   },
-  "keywords": [
-    "peak",
-    "peak district",
-    "hiking",
-    "walking"
-  ],
   "author": "Stephen Holmes",
   "license": "ISC",
   "browserslist": [
